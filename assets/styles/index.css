@@ -1,0 +1,219 @@
+@import "./reset.css";
+
+/* --------------------------------------------------
+RAMINDER SINGH
+---------------------------------------------------- */
+
+html {
+    font-family: 'PT Serif', serif;
+}
+
+
+body {
+    background-color: var(--app-light-bg);
+}
+
+.container {
+    width: min(100% - 30px, 880px);
+    margin-inline: auto;
+}
+
+:root {
+    --app-blue-fb: #607dbc;
+    --app-dark-bg: #1a1d28;
+    --app-light-bg: #f0f2f4;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+}
+
+header {
+    height: 56px;
+}
+
+.box {
+    display: flex;
+}
+
+.title {
+    width: 50%;
+    height: 40px;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #e1880a;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+}
+
+nav {
+    width: 50%;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li{ 
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--app-dark-bg);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: #ff8c69;
+    transition: all 0.4s ease 0s;
+}
+
+nav ul li + li {
+    margin-left: 18px;
+}
+
+.hero{
+    height: 80vh;
+    background-color: var(--app-light-bg);
+    background: rgb(221, 1, 1)url(../images/DHL-B777F-2.jpg) center center / cover ;
+}
+
+.hero-banner {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    background: #15181cbf;
+    width: 100%;
+}
+
+.map-area {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+}
+
+.content-img {
+    display: grid;
+    place-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+article {
+    width: 750px;
+    margin-top: 30px;
+}
+
+article h2 {
+    color: #fff;
+    text-align: center;
+}
+
+span {
+    color: var(--app-red);
+}
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
+    display: none;
+}
+
+.load-screen {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 70vh;
+    background-color: var(--app-dark-bg);
+    display: grid;
+    place-items: center;
+}
+
+.loading {
+    border: 10px solid #fff;
+    border-top: 10px solid #258cd1;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+  
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.hidden {
+    display: none;
+}
+
+#map {
+    display: block;
+    width: 80%;
+    height: 70vh;
+    color: #fff;
+}
+
+footer {
+    background-color: var(--app-dark-bg);
+    display: flex;
+    justify-content: center;
+    padding: 30px 0
+}
+
+.social-media a {
+    padding: 0 10px;
+}
+
+.social-media{
+    text-align: center;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.footer-tag{
+    font-size: 24px;
+}
+
+.copyright p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 440;
+    letter-spacing: 1px;
+}
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-linkedin {
+    color: #16658f;
+}
+
+.fa-twitter {
+    color: #04a0de;
+}
+
+.fa-facebook {
+    color: #283c68;
+}
